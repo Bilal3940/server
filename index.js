@@ -1,9 +1,10 @@
-import express from 'express'
-import dotenv from 'dotenv'
-import cookieParser from 'cookie-parser'
-import cors from 'cors'
-import { userRoute } from './routes/userRoute.js'
-import { propertiesRoute } from './routes/propertiesRoute.js'
+const express = require('express');
+const dotenv = require('dotenv');
+const cookieParser = require('cookie-parser');
+const cors = require('cors');
+const { userRoute } = require('./routes/userRoute.js');
+const { propertiesRoute } = require('./routes/propertiesRoute.js');
+
 dotenv.config()
 
 const app = express();
